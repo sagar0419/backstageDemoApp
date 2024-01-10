@@ -1,13 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstagesagar
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  annotations:
+    backstage.io/kubernetes-id: dice-roller
+    argocd/app-name: demo-argo
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/part-of=argocd'
+  name: sagar
+  title: 'B for Backstage'
+  description: An example of a Backstage application.    
 spec:
-  type: website
-  owner: john@example.com
+  type: service
+  owner: user:guest
   lifecycle: experimental
