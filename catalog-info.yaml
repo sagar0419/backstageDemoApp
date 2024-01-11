@@ -3,8 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/kubernetes-id: dice-roller
-    argocd/app-name: demo-argo
-    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/part-of=argocd'
+    backstage.io/kubernetes-namespace: demo
   name: sagar
   title: 'B for Backstage'
   description: An example of a Backstage application.    
