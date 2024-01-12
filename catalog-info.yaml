@@ -1,13 +1,18 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  annotations:
-    backstage.io/kubernetes-id: dice-roller
-    backstage.io/kubernetes-namespace: demo
-  name: sagar
-  title: 'B for Backstage'
-  description: An example of a Backstage application.    
-spec:
-  type: service
-  owner: user:guest
-  lifecycle: experimental
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+# metadata:
+#   annotations:
+#     backstage.io/kubernetes-id: dice-roller
+#     backstage.io/kubernetes-namespace: demo  
+#   name: sagar
+#   title: 'B for Backstage'
+#   description: An example of a Backstage application.
+#   links:
+#     - url: http://localhost:8080
+#       title: Jenkins Dashboard
+#       icon: dashboard
+#       type: Jenkins-Dashboard
+# spec:
+#   type: service
+#   owner: user:guest
+#   lifecycle: experimental

@@ -1,0 +1,27 @@
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: upload-to-s3
+  title: Upload
+  description: Uploads the workspace context to the given S3 bucket
+spec:
+  owner: roadie
+  type: service
+
+  parameters:
+    - title: Upload to S3
+      properties:
+        required: ['bucket']
+        bucket:
+          title: Bucket
+          type: string
+          description: The context will be uploaded into this bucket
+
+  steps:
+    - id: uploadToS3
+      name: Upload to S3
+      action: roadiehq:aws:s3:cp
+      input:
+        region: eu-west-1
+        bucket: ${{ parameters.bucket }}
