@@ -76,7 +76,7 @@ catalog:
     pullRequestBranchName: backstage-integration
   rules:
     #- allow: [Component, System, API, Resource, Location]
-    - allow: [Component, System, API, Resource, Location, Group, User, Template]
+    - allow: [Component, System, API, Resource, Location]
   locations:
     - type: file
       target: ../../ec2-demo/template/template.yaml
