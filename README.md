@@ -9,7 +9,7 @@ yarn install
 yarn dev
 ```
 
-## Variables reuired to run this app.
+## Variables required to run this app.
 ```ARGOCD_AUTH_TOKEN
 ARGOCD_USERNAME
 ARGOCD_PASSWORD
